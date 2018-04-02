@@ -7,3 +7,4 @@ node_modules/
 ._.*
 .idea/
 yarn.lock
+npm-debug.log
