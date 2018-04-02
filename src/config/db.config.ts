@@ -7,7 +7,6 @@ export const dbConfig = {
     database: 'chat',
     // 数据库连接用户名
     user: "root",
-
     // 数据库连接账号
     password: "Zkq930913."
 }
