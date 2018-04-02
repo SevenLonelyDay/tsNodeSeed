@@ -12,3 +12,9 @@
     npm run dev
     npm start
 ```
+
+#### 3. 修改连接mysql 数据库
+
+>修改 src/config/db.config.ts 文件
+
+

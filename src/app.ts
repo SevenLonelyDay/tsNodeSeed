@@ -1,3 +1,4 @@
+import { dbConfig } from './config/db.config';
 import * as express from 'express';
 import * as path from 'path';
 import * as logger from 'morgan';
@@ -6,6 +7,7 @@ import * as root from 'app-root-path';
 import * as cookieParser from 'cookie-parser';
 import * as index from './routes/index';
 import * as login from './routes/login';
+import * as mysql from 'mysql';
 
 const app = express();
 
@@ -14,6 +16,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
+
+// 连接数据库
+let connection = mysql.createConnection(dbConfig);
+
+connection.connect();
 
 app.use(cookieParser());
 

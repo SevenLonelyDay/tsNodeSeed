@@ -7,6 +7,7 @@
     "test": "tests"
   },
   "scripts": {
+    "typings": "typings",
     "dev": "node node_modules/webpack/bin/webpack.js --config config/webpack.dev.config.js",
     "build": "node node_modules/webpack/bin/webpack.js --config config/webpack.config.js --watch",
     "postinstall": "node node_modules/typings/dist/bin.js install --overwrite",
